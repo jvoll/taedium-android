@@ -68,12 +68,14 @@ public class AddTags extends WizardActivity {
         tvManualTag = (TextView)findViewById(R.id.tvAddManualTag);
 
         // Add Manual Tags button
+        /*
         bNewTag = (Button)findViewById(R.id.bAddNewTag);
         bNewTag.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 showDialog(DIALOG_ADD_MANUAL_TAG);
             }
         });
+        */
       
         // Get autotags from the server if we need to
         if (autotags == null) {

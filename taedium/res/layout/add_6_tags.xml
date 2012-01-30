@@ -20,9 +20,35 @@
             android:id="@+id/rlAddTagScrollableContent"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
+            <RelativeLayout 
+                android:id="@+id/ll1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+			    <ImageButton
+			        android:id="@+id/bNewTag"
+			        style="@style/BaseView"
+			        android:src="@drawable/btn_plus_fsm"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:background="#44FFFFFF"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerHorizontal="true">
+			    </ImageButton>
+			    <EditText 
+	                android:id="@+id/etManualTag"
+	                style="@style/BaseView"
+		            android:layout_width="fill_parent"
+			        android:layout_centerHorizontal="true"
+			        android:layout_alignParentLeft="true"
+			        android:layout_toLeftOf="@id/bNewTag"
+	                android:hint="@string/etManualTag">
+	            </EditText>
+		    </RelativeLayout>
 		    <TextView
 		        android:id="@+id/tvAddAutoTag"
 		        style="@style/BaseView"
+		        android:layout_below="@id/ll1"
 		        android:layout_marginBottom="5dp"
 		        android:textColor="#000000"
 		        android:text="@string/tvAddAutoTag">
@@ -35,12 +61,6 @@
 		        android:textColor="#000000"
 		        android:text="@string/tvAddManualTag">
 		    </TextView>
-		    <Button
-		        android:id="@+id/bAddNewTag"
-		        style="@style/BaseView"
-		        android:layout_below="@id/tvAddManualTag"
-		        android:text="@string/bAddNewTag">
-		    </Button>
 	    </RelativeLayout>
 	</ScrollView>
     <include

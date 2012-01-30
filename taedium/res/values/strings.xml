@@ -54,6 +54,7 @@
     <string name="bMapFinished">Use Selected Location</string>
     <string name="bSubmitFlag">Submit Flag</string>
     <string name="bAddNewTag">Add Tags Manually</string>
+    <string name="etManualTag">Enter custom tag</string>
     
     <!-- Labels -->
     <string name="tvAddName">Name *</string>
